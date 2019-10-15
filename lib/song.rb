@@ -26,13 +26,7 @@ class Song
    def self.artists
     @@artists.uniq
   end
- 
- 
-# if genre_count of key "genre" exists
-#    then increment it's count (the value of the key value pair) by one. 
-# else (if genre_count of key "genre" is nil, or falsey, aka it doesn't exist)#
-#		then CREATE the value/key pair for that genre and set it to one.
-  
+
   def self.genre_count
    genre_count = {}
 	 @@genres.each do |genre|
@@ -41,7 +35,6 @@ class Song
 			else
 			   genre_count[genre] = 1
 			end
-			
 	end
 	genre_count
 	end
@@ -54,11 +47,8 @@ class Song
 			else
 			   artist_count[artist] = 1
 			end
-			
 	end
 	artist_count
 	end
 	
-	
- 
 end
