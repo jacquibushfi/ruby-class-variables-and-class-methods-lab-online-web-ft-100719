@@ -10,17 +10,14 @@ class Song
    @artist = artist
    @genre = genre
    @@count += 1
-   
-   if !self.genre.any? == genre
-     @@genres << genre 
-   end
-   
  end
  
  def self.count
    @@count
  end
  
- 
+ def self.genres
+    @@genres.uniq
+  end
  
 end
