@@ -28,7 +28,10 @@ class Song
   end
  
  
- 
+# if genre_count of key "genre" exists
+#    then increment it's count (the value of the key value pair) by one. 
+# else (if genre_count of key "genre" is nil, or falsey, aka it doesn't exist)#
+#		then CREATE the value/key pair for that genre and set it to one.
   
   def self.genre_count
    genre_count = {}
